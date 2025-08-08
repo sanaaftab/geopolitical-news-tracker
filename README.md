@@ -70,7 +70,7 @@ nano ~/.zshrc                                   # 1. Open shell profile
 export NEWSAPI_KEY="your_newsapi_key_here"      # 2. Add this line at the end
 source ~/.zshrc                                 # 3. Reload profile
 echo $NEWSAPI_KEY                               # 4. Verify it was set
-```bash
+```
 
 ## Sample Use Case
 
