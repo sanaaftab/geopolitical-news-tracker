@@ -5,3 +5,4 @@ nltk
 pycountry
 matplotlib
 seaborn
+pytest
