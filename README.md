@@ -24,6 +24,10 @@ geo-risk-tracker/
 ├── risk_score.py           # Risk scoring logic
 ├── utils.py                # Country code lookup, date range
 ├── requirements.txt        # Python dependencies
+├── tests/                       # Unit tests for project modules
+│   ├── test_keyword_analysis.py
+│   ├── test_sentiment.py
+│   └── test_risk_score.py 
 └── README.md
 ```
 
@@ -60,6 +64,11 @@ streamlit run app.py
 
 * Get your **NewsAPI key** from: [https://newsapi.org](https://newsapi.org)
 * Please set it up as an environment variable under NEWSAPI_KEY
+
+nano ~/.zshrc                                   # 1. Open shell profile
+export NEWSAPI_KEY="your_newsapi_key_here"      # 2. Add this line at the end
+source ~/.zshrc                                 # 3. Reload profile
+echo $NEWSAPI_KEY                               # 4. Verify it was set
 
 ## Sample Use Case
 
