@@ -59,11 +59,11 @@ streamlit run app.py
 ## API Key Setup
 
 * Get your **NewsAPI key** from: [https://newsapi.org](https://newsapi.org)
-* Paste it into the Streamlit sidebar input field
+* Please set it up as an environment variable under NEWSAPI_KEY
 
 ## Sample Use Case
 
-Analyze the risk level in your chosen country over the past 7 days using keywords like:
+Analyze the risk level in your chosen country over the past 21 days using keywords like:
 
 ```
 conflict, war, protest, unrest, sanctions, bombing

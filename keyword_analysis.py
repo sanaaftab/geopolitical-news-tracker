@@ -6,6 +6,13 @@ from nltk.stem import PorterStemmer
 nltk.download("punkt_tab")
 
 def get_keyword_frequencies(df, keywords):
+    """ Calculate the frequency of keywords in the 'description' column.
+
+    Args: df: DataFrame containing a 'description' column with text data. 
+    keywords (list of str): List of keywords to search for in the descriptions.
+
+    Returns: dict: A dictionary of each stemmed keyword to its frequency count. """
+
     ps = PorterStemmer()
     stemmed_keywords = [ps.stem(kw.lower()) for kw in keywords]
 

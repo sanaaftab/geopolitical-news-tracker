@@ -6,7 +6,7 @@ from datetime import date, timedelta
 def fetch_news_country(api_key, country, keywords):
     """
     Fetch recent news for a country name using NewsAPI /v2/everything.
-    Only the country name is used as the query (q). Date range fixed to last 21 days.
+    Searches by country name and keywords. Date range fixed to last 21 days.
     """
 
     keyword_query = " OR ".join(keywords)

@@ -1,4 +1,12 @@
 def calculate_risk_score(keyword_count, avg_sentiment):
+    """ Calculate a risk score based on keyword frequency and average sentiment.
+
+    Args: keyword_count (int): The number of times risk-related keywords appear. 
+    avg_sentiment (float): The average sentiment score, ranging from -1 (negative) 
+    to 1 (positive).
+
+    Returns: float: The calculated risk score on a scale from 0 to 100. """
+
     # Variable to indicate high instability
     # E.g. if country has 50+ counts of the keywords, it indicates max instability
     max_keyword_possible = 50
@@ -15,6 +23,12 @@ def calculate_risk_score(keyword_count, avg_sentiment):
 
 
 def get_recommendation(risk_score):
+    """ Provide a recommendation based on the calculated risk score.
+
+    Args: risk_score (float): The risk score value, between 0 and 100.
+
+    Returns: str: A recommendation for the level of risk and suggested action. """
+
     if risk_score >= 50:
         return "High risk – Recommend delaying entry"
     elif risk_score >= 40:
