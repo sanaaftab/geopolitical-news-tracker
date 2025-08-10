@@ -36,7 +36,7 @@ if run_button:
     if not validate_country_name(country):
         st.error("Invalid country name. Please enter a valid country.")
     else:
-        st.subheader(f"Results for {country} (last 30 days)")
+        st.subheader(f"Results for {country} (last 21 days)")
 
         if not api_key:
             st.error("Missing API key. Set NEWSAPI_KEY as an environment variable.")
